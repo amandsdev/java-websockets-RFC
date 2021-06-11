@@ -15,8 +15,8 @@ Implemented WebSocket protocol versions are:
  * [RFC 6455](http://tools.ietf.org/html/rfc6455)
  * [RFC 7692](http://tools.ietf.org/html/rfc7692)
 
-[Here](https://github.com/TooTallNate/Java-WebSocket/wiki/Drafts) some more details about protocol versions/drafts. 
-[PerMessageDeflateExample](https://github.com/TooTallNate/Java-WebSocket/wiki/PerMessageDeflateExample) enable the extension with reference to both a server and client example. 
+[Here](https://github.com/amandsdev/java-websockets-rfc/wiki/Drafts) some more details about protocol versions/drafts. 
+[PerMessageDeflateExample](https://github.com/amandsdev/java-websockets-rfc/wiki/PerMessageDeflateExample) enable the extension with reference to both a server and client example. 
 
 
 ## Getting Started
@@ -53,11 +53,11 @@ Exceptions are using the log level `ERROR` and debug logging will be done with l
 
 Feel free to use whichever logging framework you desire and use the corresponding [binding](https://mvnrepository.com/artifact/org.slf4j) in your dependency management.
 
-If you want to get started, take a look at the SimpleLogger [example](https://github.com/TooTallNate/Java-WebSocket/wiki/SimpleLogger-example).
+If you want to get started, take a look at the SimpleLogger [example](https://github.com/amandsdev/java-websockets-rfc/wiki/SimpleLogger-example).
 
 ### Standalone jar
 
-If you do not use any dependency management tool, you can find the latest standalone jar [here](https://github.com/TooTallNate/Java-WebSocket/releases/latest).
+If you do not use any dependency management tool, you can find the latest standalone jar [here](https://github.com/amandsdev/java-websockets-rfc/releases/latest).
 
 Writing your own WebSocket Server
 ---------------------------------
@@ -68,7 +68,7 @@ server-side of the
 A WebSocket server by itself doesn't do anything except establish socket
 connections though HTTP. After that it's up to **your** subclass to add purpose.
 
-An example for a WebSocketServer can be found in both the [wiki](https://github.com/TooTallNate/Java-WebSocket/wiki#server-example) and the [example](https://github.com/TooTallNate/Java-WebSocket/tree/master/src/main/example) folder.
+An example for a WebSocketServer can be found in both the [wiki](https://github.com/amandsdev/java-websockets-rfc/wiki#server-example) and the [example](https://github.com/amandsdev/java-websockets-rfc/tree/master/src/main/example) folder.
 
 Writing your own WebSocket Client
 ---------------------------------
@@ -79,12 +79,12 @@ connect to. Important events `onOpen`, `onClose`, `onMessage` and `onError`
 get fired throughout the life of the WebSocketClient, and must be implemented 
 in **your** subclass.
 
-An example for a WebSocketClient can be found in both the [wiki](https://github.com/TooTallNate/Java-WebSocket/wiki#client-example) and the [example](https://github.com/TooTallNate/Java-WebSocket/tree/master/src/main/example) folder.
+An example for a WebSocketClient can be found in both the [wiki](https://github.com/amandsdev/java-websockets-rfc/wiki#client-example) and the [example](https://github.com/amandsdev/java-websockets-rfc/tree/master/src/main/example) folder.
 
 Examples
 -------------------
  
-You can find a lot of examples [here](https://github.com/TooTallNate/Java-WebSocket/tree/master/src/main/example).
+You can find a lot of examples [here](https://github.com/amandsdev/java-websockets-rfc/tree/master/src/main/example).
 
 WSS Support
 ---------------------------------
@@ -102,7 +102,7 @@ It is currently not possible to accept ws and wss connections at the same time v
 
 For some reason Firefox does not allow multiple connections to the same wss server if the server uses a different port than the default port (443).
 
-If you want to use `wss` on the android platform you should take a look at [this](https://github.com/TooTallNate/Java-WebSocket/wiki/FAQ:-Secure-WebSockets#wss-on-android).
+If you want to use `wss` on the android platform you should take a look at [this](https://github.com/amandsdev/java-websockets-rfc/wiki/FAQ:-Secure-WebSockets#wss-on-android).
 
 I ( @Davidiusdadi ) would be glad if you would give some feedback whether wss is working fine for you or not.
 
